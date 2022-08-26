@@ -84,4 +84,4 @@ async def on_message_delete(message):
     await log.send(embed=embed)
 
 
-bot.run('MTAxMTA0NTQyOTgwODQ4MDI3Ng.GRAnaz.0dv4-M5KW2Rrhp4i5kR1MaUhh1YLnoDKuC5R9A')
+bot.run("Your Token Here)
