@@ -12,6 +12,9 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 
+with open('.txt', 'r') as file:
+    token = file.read()
+
 adm_role_id = 'ADM'
 users_role_id = ''
 
@@ -97,4 +100,5 @@ async def on_message_delete(message):
     embed.add_field(name="Message Content:", value=f"{message.content}")
     await log.send(embed=embed)
 
-bot.run('MTAxMTA0NTQyOTgwODQ4MDI3Ng.GwOCOI.6gqbPYKPCAPJVqwDkah7dq3yr2hiGZzWhbxRQw', log_handler=handler, log_level=logging.DEBUG)
+
+bot.run(f"{token}", log_handler=handler, log_level=logging.DEBUG)
