@@ -16,3 +16,24 @@
 [2022-08-29 18:20:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_MEMBERS_CHUNK', 's': 3, 'op': 0, 'd': {'nonce': '50226c9f692c00158bcb3b1d772df154', 'members': [{'user': {'username': 'trz', 'public_flags': 256, 'id': '889675144400883733', 'discriminator': '5725', 'bot': False, 'avatar': 'e9750bde046726abc873f2b7c8f221af'}, 'roles': ['994773455302045717'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-04-04T16:27:29.727000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, {'user': {'username': 'Bot Template', 'public_flags': 0, 'id': '1011045429808480276', 'discriminator': '8022', 'bot': True, 'avatar': '7e83a1f1deaf4e896b31bb928c79da2f'}, 'roles': ['1011045736286277684', '994773455302045717'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-08-21T22:54:47.902000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, {'user': {'username': 'teste bot', 'public_flags': 0, 'id': '1012805161808306287', 'discriminator': '9820', 'bot': False, 'avatar': '6c5996770c985bcd6e5b68131ff2ba04'}, 'roles': [], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2022-08-29T17:17:43.701000+00:00', 'flags': 1, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'guild_id': '960576355160952862', 'chunk_index': 0, 'chunk_count': 1}}
 [2022-08-29 18:20:39] [DEBUG   ] discord.client: Dispatching event socket_event_type
 [2022-08-29 18:20:39] [DEBUG   ] discord.state: Processed a chunk for 3 members in guild ID 960576355160952862.
+[2022-08-29 18:20:41] [DEBUG   ] discord.client: Dispatching event guild_available
+[2022-08-29 18:20:41] [DEBUG   ] discord.client: Dispatching event ready
+[2022-08-29 18:21:19] [DEBUG   ] discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=4003, extra='Not authenticated.')
+[2022-08-29 18:21:19] [DEBUG   ] discord.gateway: Websocket closed with 4003, attempting a reconnect.
+[2022-08-29 18:21:19] [DEBUG   ] discord.client: Got a request to RESUME the websocket.
+[2022-08-29 18:21:19] [DEBUG   ] discord.client: Dispatching event disconnect
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-z512",{"micros":0.0}]']}}
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: Shard ID None has sent the RESUME payload.
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 9, 'd': False}
+[2022-08-29 18:21:20] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
+[2022-08-29 18:21:20] [DEBUG   ] discord.client: Got a request to IDENTIFY the websocket.
+[2022-08-29 18:21:20] [DEBUG   ] discord.client: Dispatching event disconnect
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+[2022-08-29 18:21:20] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-main-lfl2",{"micros":0.0}]']}}
+[2022-08-29 18:21:25] [DEBUG   ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2022-08-29 18:21:25] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2022-08-29 18:21:25] [DEBUG   ] discord.gateway: Received WSMessage(type=<WSMsgType.CLOSE: 8>, data=4004, extra='Authentication failed.')
+[2022-08-29 18:21:25] [DEBUG   ] discord.gateway: Websocket closed with 4004, cannot reconnect.
+[2022-08-29 18:21:25] [DEBUG   ] discord.client: Dispatching event disconnect
